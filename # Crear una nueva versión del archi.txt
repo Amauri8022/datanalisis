@@ -1,0 +1,86 @@
+# Crear una nueva versión del archivo HTML con el número de WhatsApp incluido
+html_content = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoría en Análisis de Datos para PYMEs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #1d3557;
+    }
+    p {
+      color: #333;
+      line-height: 1.6;
+    }
+    .cta {
+      margin-top: 30px;
+      background-color: #1d3557;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .price {
+      font-weight: bold;
+      color: #e63946;
+    }
+    .features {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Consultoría en Análisis de Datos para PYMEs</h1>
+    <p>¿Tomas decisiones de negocio sin datos claros? Te ayudo a convertir tu información en decisiones estratégicas con dashboards, reportes y recomendaciones personalizadas.</p>
+
+    <h2>Paquete Inicial - <span class="price">$1.200.000 COP</span></h2>
+    <ul class="features">
+      <li>Análisis de tus datos de ventas, clientes o productos</li>
+      <li>Dashboard interactivo (Power BI o Google Data Studio)</li>
+      <li>Informe con recomendaciones accionables</li>
+      <li>Capacitación para interpretar los resultados</li>
+    </ul>
+
+    <h2>Plan Mensual - <span class="price">$600.000 COP</span></h2>
+    <ul class="features">
+      <li>Actualización mensual del dashboard</li>
+      <li>Informe ejecutivo y reunión de análisis</li>
+      <li>Soporte personalizado</li>
+    </ul>
+
+    <a href="https://wa.me/573045356198" class="cta">Agenda tu llamada gratuita</a>
+  </div>
+</body>
+</html>
+"""
+
+file_path = "/mnt/data/index.html"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+file_path
